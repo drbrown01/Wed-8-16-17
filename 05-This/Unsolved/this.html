@@ -25,6 +25,7 @@
 
       //  1. What will be console logged out? What is *this* in this case?
       console.log(this);
+      // this will console log window
 
     };
 
@@ -32,7 +33,7 @@
 
     $("#button").on("click", function() {
 
-      //  2. What will be console logged out? What is *this* in this case?
+      //  2. What will be console logged out? What is *this* in this case? //this shows object in the console
       console.log(this);
     });
 
@@ -42,12 +43,22 @@
       whoIsBob: function() {
         console.log(this);
       },
+      fullName: function (){
+        console.log(firstName +" "+ lastName){
 
-      //  3. Put something inside of the following function so that it works
-      fullName: function() {
+        };
 
       }
+      //  3. Put something inside of the following function so that it works
+
     };
+
+    var fullName = firstName + lastName
+    {
+      ;
+        console.log(fullName);
+
+      }
 
     //  4. What will the console log output if the next function gets called?
     bob.whoIsBob();
@@ -77,7 +88,3 @@
   </body>
 
 </html>
-
-
-
-
